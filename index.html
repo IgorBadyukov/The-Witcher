@@ -5,17 +5,19 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preload" href="fonts/ibm-plex-mono-latin_cyrillic-500.woff2"
+    as="font" text="font/woff2" crossorigin>
     <link rel="stylesheet" href="css/index.css">
     <title>The Witcher</title>
 </head>
 
 <body>
     <header class="header">
-        <div class="container">
-            <img src="img/logo.svg" alt="logo" class="header__logo">
+        <div class="container header__container">
+            <img src="img/logo.svg" alt="logo" width="93" height="85" class="header__logo">
             <p class="header__anoncment">2 сезон уже с 17 декабря</p>
             <nav class="header__navigation navigation">
-                <ul class="navigatio__list">
+                <ul class="navigation__list">
                     <li class="navigation__item">
                         <a href="#" class="navigation__link navigation__link__netflex"></a>
                     </li>
@@ -36,7 +38,7 @@
                 <h1 class="present__title">Ведьмак</h1>
                 <p1 class="present__tagline">Те, кто связан предназначением,
                     всегда найдут друг друга</p1>
-                <a href="https://youtu.be/PQ59CmCyOk4" class="present__btn">Смотреть трейлер</a>
+                <a href="https://youtu.be/PQ59CmCyOk4" class="present__btn"></a>
             </div>
             <!-- present__hero -->
             <div class="present__tabs tabs">
@@ -103,8 +105,8 @@
                         <ul class="tabs__content">
                             <li class="card card__product">
                                 <article class="product">
-                                    <img src="img/pendant.jpg" class="picture" alt="pendant">
-                                    <h2>Медальон Школы Волка</h2>
+                                    <img src="img/pendant.jpg" class="product__img" alt="pendant">
+                                    <h2 class="product__title">Медальон Школы Волка</h2>
                                     <div class="product__wrapper-buy">
                                         <div class="product__price">999₽</div>
                                         <button class="product__btn-buy">
@@ -117,13 +119,13 @@
                             </li>
                             <li class="card card__product">
                                 <article class="product">
-                                    <img src="img/mask.jpg" class="picture" alt="mask">
-                                    <h2>Маска защитная</h2>
+                                    <img src="img/mask.jpg" class="product__img" alt="mask">
+                                    <h2 class="product__title">Маска защитная</h2>
                                     <div class="product__wrapper-buy">
                                         <div class="product__price">390₽</div>
                                         <button class="product__btn-buy">
                                             <svg class="product__btn-icon">
-                                                <use xlink:href="#add" />
+                                                <use xlink:href="#add"/>
                                             </svg>
                                         </button>
                                     </div>
@@ -131,13 +133,13 @@
                             </li>
                             <li class="card card__product">
                                 <article class="product">
-                                    <img src="img/pendent.jpg" class="picture" alt="pendent">
-                                    <h2>Кулон Волк</h2>
+                                    <img src="img/pendent.jpg" class="product__img" alt="pendent">
+                                    <h2 class="product__title">Кулон Волк</h2>
                                     <div class="product__wrapper-buy">
                                         <div class="product__price">1999₽</div>
                                         <button class="product__btn-buy">
                                             <svg class="product__btn-icon">
-                                                <use xlink:href="#add" />
+                                                <use xlink:href="#add"/>
                                             </svg>
                                         </button>
                                     </div>
@@ -160,7 +162,7 @@
                 16 17ZM6.17 13.75L6.2 13.63L7.1 12H14.55C15.3 12 15.96 11.59 16.3 10.97L20.16
                 3.96L18.42 3H18.41L17.31 5L14.55 10H7.53L7.4 9.73L5.16 5L4.21 3L3.27 1H0V3H2L5.6
                 10.59L4.25 13.04C4.09 13.32 4 13.65 4 14C4 15.1 4.9 16 6 16H18V14H6.42C6.29 14
-                6.17 13.89 6.17 13.75Z" />
+                6.17 13.89 6.17 13.75Z"/>
         </symbol>
     </svg>
 </body>
