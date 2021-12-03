@@ -47,8 +47,31 @@
     border: 1px solid #9B9B9B;
 }
 
-
 .product__btn-icon {
     width: 21px;
     height: 21px;
+}
+
+@media(max-width: 1000px){
+    .product__title{
+        font-size: 26px;
+    }
+}
+
+@media(max-width: 850px){
+  .product__img{
+    height: 180px;
+  }
+}
+
+@media(max-width: 750px){
+    .product__img{
+        height: calc((100vw - 78px)/ 5 * 3);
+    }
+}
+
+@media(max-width: 750px){
+    .product__img{
+        height: calc((100vw - 30px)/ 5 * 3);
+    }
 }
