@@ -17,11 +17,6 @@
     border-bottom: 2px solid transparent;
     transition: border-color 0.3s ease-in-out;
 }
-
-.tabs__list{
-    margin-bottom: 68px;
-}
-
 .tabs__btn_active{
     border-color:#fff;
 }
@@ -29,7 +24,9 @@
 .tabs__content{
     display: flex;
     justify-content: space-between;
-    gap: 30px
+    gap: 30px;
+    min-height: 300px;
+    padding-top: 10px;
 }
 
 .tabs__item{
@@ -50,6 +47,7 @@
 @media(max-width: 850px){
     .tabs__content{
         flex-wrap: wrap;
+        min-height: 310px;
     }
     .tabs__control{
         padding: 16px 46px;
@@ -77,6 +75,6 @@
 
 @media(max-width: 320px){
     .tabs__control{
-        margin: 0 auto 20px;
+        margin: 0 auto 10px;
     }
 }

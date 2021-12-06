@@ -10,6 +10,44 @@
     margin-bottom: 10px;
 }
 
+.card__video-set{
+    position: relative;
+}
+
+.card__video-set::before{
+    content: url('../img/watch.png');
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    background: rgba(255, 255, 255, 0.62);
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    left: calc(50% - 18px);
+    top: 30%;
+    border: none;
+    transition: border 0.3s ease-in-out,
+       background 0.3s ease-in-out,
+       width 0.3s ease-in-out, 
+       height 0.3s ease-in-out;
+}
+
+.card__video-set:hover::before{
+    background: #FFFFFF;
+}
+
+.card__video-set:active::before{
+    width: 42px;
+    height: 42px;
+    background: #FFFFFF;
+}
+
+.card__video-set:focus::before{
+    background: rgba(255, 255, 255, 0.62);
+    border: 1px solid #9B9B9B;
+}
+
 .card__img {
     flex-basis: 255px;
 }
@@ -55,6 +93,9 @@
     }
     .card__photo-img{
         height: calc((100vw - 78px)/ 5 * 4);
+    }
+    .card__video-set::before{
+        top: 40%;
     }
 }
 

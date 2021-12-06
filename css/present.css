@@ -18,15 +18,45 @@
 }
 
 .present__btn {
+    position: relative;
     display: block;
     width: 285px;
     height: 68px;
-    background: url(../img/button.png);
-    filter: drop-shadow(-4px 6px 10px rgba(10, 10, 10, 0.51));
     border-radius: 2px;
-    background-position: center;
-    background-size: repeat;
 }
+
+.present__btn::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    background: url('../img/button.png');
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    filter: drop-shadow(-4px 6px 10px rgba(10, 10, 10, 0.51));
+    transition: filter .3s ease-in-out;
+}
+
+.present__btn::after{
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    background-image: url('../img/watchTrailer.png');
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.present__btn:hover::before{
+    filter: drop-shadow(-4px 6px 10px rgba(10, 10, 10, 0.51))
+    brightness(1.2);
+}
+
 
 .present__hero{
     margin-bottom: 20px;
